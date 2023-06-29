@@ -1,0 +1,13 @@
+from flask import Flask
+
+# Создание Flask-приложения
+app = Flask(__name__)
+
+# Определение маршрута и функции-обработчика
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+# Запуск приложения
+if __name__ == '__main__':
+    app.run()
